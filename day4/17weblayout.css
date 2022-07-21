@@ -1,25 +1,22 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: large;
-}
 .header{
-    background-color: blue;
+    background-color: cadetblue;
     padding: 40px 20px;
     color: white;
     margin-left: -10px;
 }
 h3{
     text-align: center;
-    background-color: rgb(172, 163, 163);
-    padding: 20px;
-    text-decoration: none;
+}
+.nav{
+
+}
+body{
+    width: 100%;
 }
 ul{
     /* border: 1px solid blue; */
     list-style: none;
-    background-color: cornflowerblue;
+    background-color: brown;
     overflow: hidden;
     margin : auto;
     margin-left: -10px;
@@ -35,11 +32,16 @@ ul > li a{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    /*  */
 }
 ul > li a:hover{
     background-color: black;
     color: white;
 }
+
+
+
+
 .main{
     background-color: azure;
     padding: 20px;
@@ -52,38 +54,4 @@ ul > li a:hover{
     padding: 20px;
     text-align: center;
     margin-left: -10px;
-}
-table{
-    /* border-top: 3px solid gray;
-    border-bottom: 3px solid gray ; */
-    border: 3px solid gray;
-}
-tr,td{
-    padding: 1px;
-    border: 1px solid gray;
-}
-h1{
-    font-size: 25px;
-    text-align: center;
-
-}
-tr > td:nth-child(1){
-    font-weight: bold;
-    
-}
-button{
-    padding: 1px 15px;
-    margin: 5px 7px;
-}
-input{
-    width: 40%;
-}
-input[id = adress]{
-    width: 80%;
-}
-input[id = lblnum]{
-    width: 60%;
-}
-select{
-    width: 63%;
 }

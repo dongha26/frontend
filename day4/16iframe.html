@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day4_iframe</title>
+    <style>
+        iframe{
+            width: 45%;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- iframe : 현재 문서에 다른 문서를 포함시킵니다.
+    포한시킬문서의 url(http주소,파일명)은 src 속성으로 설정 -->
+        <h4>13from.html문서담기</h4>
+        <!-- hr -->
+        <iframe src="/day3/13from.html" frameborder="0"></iframe>
+        <!-- 한단계 상위폴더 이동 후 day3 폴더 -->
+        <iframe src="../day3/13from.html" frameborder="0"></iframe>
+
+        <h4>공유링크 퍼오기</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lowlkVL5WLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12819.940940228778!2d128.74728025000002!3d36.55446895000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1658365251413!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <h4>url 직접 지정</h4>
+        <iframe src="http://itgn.cafe24.com" frameborder="0"></iframe>
+        <iframe src="https://www.w3schools.com/css/css_link.asp" frameborder="0"></iframe>
+</body>
+</html>
