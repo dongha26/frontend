@@ -1,0 +1,79 @@
+header{
+    background-color: blue;
+    padding: 40px 20px;
+    color: white;
+    margin-left: -10px;
+}
+h3{
+    text-align: center;
+    background-color: rgb(172, 163, 163);
+    padding: 20px;
+    text-decoration: none;
+}
+ul{
+    /* border: 1px solid blue; */
+    list-style: none;
+    background-color: rgb(62, 98, 163);
+    color: white;
+    overflow: hidden;
+    margin : auto;
+    margin-left: -10px;
+}
+main{
+    background-color: rgb(172, 163, 163);
+    /* background-color: azure; */
+    padding: 20px;
+    height: 450px;
+    margin-left: -10px;
+}
+footer{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-left: -10px;
+}
+div{
+
+}
+ul > li {
+    float: left;
+    /* border: 1px solid black; */
+}
+/* 위의 border로 영역확인 : nav,ul 영역이 li영역보다 작습니다 */
+ul > li a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul > li a:hover{
+    background-color: black;
+    color: white;
+}
+table{
+    /* border-top: 3px solid gray;
+    border-bottom: 3px solid gray ; */
+    border: 3px solid gray;
+    margin-left: 20px;
+}
+tr,td,th{
+    padding: 1px;
+    border: 1px solid gray;
+}
+h1{
+    font-size: 25px;
+    text-align: center;
+
+}
+tr > td:nth-child(1){
+    color: aliceblue;
+}
+tr{
+    background-color: rgb(172, 163, 163);
+}
+/* .main{
+    margin-left: -10px;
+    margin-right: -10px;
+} */
