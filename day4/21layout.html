@@ -110,11 +110,11 @@ body {
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns : pseudo 요소는 :after, before*/
 .row:after {
   content: "";
   display: table;
-  clear: both;
+  clear: both; /*float:left: 를 클리어;*/
 }
 
 /* Footer */

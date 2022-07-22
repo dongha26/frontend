@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+  /* box-model의 크기 = width+padding*2+border-width*2 
+   box sizing: border-box;은 width 설정되는 값이 padding,테두리를포함*/
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: red;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(124, 100, 100);
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 {
+  background-color: rgb(75, 68, 68);
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg2 {
+  background-color: rgb(84, 173, 139);
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg3 {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.card1 {
+  background-color: rgb(124, 100, 100);
+  padding: 20px;
+  margin-top: 20px;
+}
+.card2 {
+  background-color: rgb(75, 68, 68);
+  padding: 20px;
+  margin-top: 20px;
+}
+.card3 {
+  background-color: rgb(84, 173, 139);
+  padding: 20px;
+  margin-top: 20px;
+}
+.card4 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+   
+/* 반응형 레이아웃 */
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+       
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>홈페이지</h1>
+  <p>홈페이지 만들어보기.</p>
+</div>
+
+<div class="topnav">
+  <a href="/images/어벤져스1.jpg">어벤져스1</a>
+  <a href="/images/어벤져스4.jpg">어벤져스2</a>
+  <a href="/images/어벤져스3.jpg">어벤져스3</a>
+  <a href="#" style="float:right">끝</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card1">
+      <h2>스파이더맨</h2>
+      <h5>스파이더맨입니다</h5>
+      <div class="fakeimg" ><img src="/images/스파이더맨.jpg" alt="" width="250" height="200">
+                            <img src="/images/스파이더맨2.jpg" alt="" width="250" height="200">
+                            <img src="/images/스파이더맨3.jpg" alt="" width="250" height="200"></div> <br>
+      <p>창조자 :스탠 리  스티브 딧코</p>
+      <p>스파이더맨은 1960년대 작품이다. 1960년대 10대라고 해봐야 2020년대 기준으로 '노인'이므로, 계속 시대상에 따라 주인공이 리부트되며 설정이 조금씩 바뀐다. 
+        2002년 작품인 스파이더맨 1도 어느덧 2022년 기준으로는 '고전물'에 가까워졌지만, 당시엔 '21세기 스파이더맨'이라고 화제였다. 
+        휴대폰을 사용하는 스파이더맨이라니 나름 신선하고 발전한 CG기술로 만화속 스파이더맨을 잘 구현해서 호평을 받았었다. 
+        하지만 어느덧 구형 휴대폰을 사용하는 스파이더맨은 구식이 되었고, 2018년 PS4로 발매된 마블 스파이더맨에서는 트위터를 운영하는 스파이더맨이 등장한다. 
+        시민들도 다들 스마트폰으로 스파이더맨을 촬영한다. 프로필 사진도 스파이더맨이 상공에서 셀카 찍은 'SNS 인증샷'이며, 뉴욕시민들의 SNS가 계속 올라온다. 
+        1960년대 10대였던 오리지날 스파이더맨이 본다면 상당한 이질감을 느낄 정도로 발전했는데, 한 시리즈가 무려 반세기를 훌쩍 넘어 60여년을 초월하여 계속 꾸준히 나오다 보니 발생한 
+        이색현상이다.</p>
+    </div>
+    <div class="card2">
+      <h2>아이언맨</h2>
+      <h5>아이언맨입니다</h5>
+      <div class="fakeimg1" style="height:200px;"><img src="/images/아이언맨.jpg" alt="" width="250" height="200">
+                                                 <img src="/images/아이언맨2.jpg" alt="" width="250" height="200">
+                                                 <img src="/images/아이언맨3.jpg" alt="" width="250" height="200"></div><br>
+      <p>창조자: 스탠 리/래리 리버(글) 돈 헥/잭 커비(그림)</p>
+      <p>마블 코믹스의 인기 히어로. 이명은 아이언맨으로,[1] 천하무적 아이언맨(The Invincible Iron Man)이라는 수식어가 붙는다. 
+        역설적으로 철은 방탄용으로 잘 쓰이지 않는다는 점을 고려하면 아이언맨을 만들기 위한 합금에는 철이 없을 확률이 높다.
+         철이 단단한 금속하면 아이언맨이 되어 범죄와 싸워나간다.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card3">
+      <h2>엔드게임</h2>
+      <div class="fakeimg2" style="height:100px;"><img src="/images/엔드게임1.jpg" alt="" width="550" height="100" ></div><br>
+      <p>어벤져스 실사영화 시리즈의 4번째 작품이자, 마블 시네마틱 유니버스의 스물 두번째 작품이며, 
+        페이즈 3의 10번째 작품이자 지난 2008년, 아이언맨을 시작으로 장장 11년동안 이어져온 인피니티 사가를 마무리하는 작품</p>
+    </div>
+    <div class="card4">
+      <h3>인피니티워</h3>
+      <div class="fakeimg3"><img src="/images/인피니티워1.jpg" alt="" width="550" height="200"></div>
+      <div class="fakeimg3"><img src="/images/인피니티워2.jpg" alt="" width="550" height="200"></div>
+      <div class="fakeimg3"><img src="/images/인피니티워3.jpg" alt="" width="550" height="200"></div>
+    </div>
+    <div class="card">
+      <h3>마블</h3>
+      <p>마블 스튜디오에서 제작하는 슈퍼히어로물 프랜차이즈 세계관. Marvel Cinematic Universe 
+        (마블 시네마틱 유니버스) 앞자를 따서 MCU라고 부른다.
+        마블 스튜디오가 제작한 영화, 드라마 등 모든 마블 스튜디오 작품들이 이 세계관에 속해 있다.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>끝</h2>
+</div>
+
+</body>
+</html>
+
+

@@ -51,7 +51,8 @@
           float: left;
           width: 65%;
         }
-    
+        
+
         .rightcolumn {
           float: right;
           width: 35%;
@@ -62,9 +63,8 @@
         /* Fake image */
         .fakeimg {
           background-color: #aaa;
-          width: 30%;
-          padding: 10px;
-        
+          width: 100%;
+          padding: 20px;
         }
         
         /* Add a card effect for articles */
@@ -89,13 +89,22 @@
           margin-top: 20px;
           color: black;
         }
-        img{
-            position: absolute;
-            bottom: 10px;
-            margin-bottom: 300px;
-            
+        
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+          .leftcolumn, .rightcolumn {   
+            width: 100%;
+            padding: 0;
+          }
         }
         
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+          .topnav a {
+            float: none;
+            width: 100%;
+          }
+        }
        
         </style>
 </head>
@@ -141,15 +150,15 @@
         <div class="rightcolumn">
         <div class="card">
         <h2>엔드게임</h2>
-        <div class="fakeimg" style="height:100px;"></div>
+        <div class="fakeimg" style="height:100px;"><img src="/images/엔드게임1.jpg" alt="" width="300" height="200">></div>
         <p>어벤져스 실사영화 시리즈의 4번째 작품이자, 마블 시네마틱 유니버스의 스물 두번째 작품이며, 
             페이즈 3의 10번째 작품이자 지난 2008년, 아이언맨을 시작으로 장장 11년동안 이어져온 인피니티 사가를 마무리하는 작품.</p>
         </div>
         <div class="card">
         <h3>인피니티워</h3>
-        <div class="fakeimg"><p></p></div>
-        <div class="fakeimg"><p></p></div>
-        <div class="fakeimg"><p></p></div>
+        <div class="fakeimg"><p><img src="/images/인피니티워1.jpg" alt="" width="300" height="200">></p></div>
+        <div class="fakeimg"><p><img src="/images/인피니티워2.jpg" alt="" width="300" height="200">></p></div>
+        <div class="fakeimg"><p><img src="/images/인피니티워2.jpg" alt="" width="300" height="200">></p></div>
         </div>
         <div class="card">
         <h3>마블</h3>
