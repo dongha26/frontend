@@ -40,6 +40,8 @@ function valid_check(){
     if(regex.test(tel.value)===false) {
         //alert('입력된 값은 핸드폰 번호 형식이 아닙니다.')
         document.getElementById('tel').innerHTML='핸드폰 번호 형식이 아닙니다.'
+        tel.focus()
+        isValid = false
     }else {
         document.getElementById('tel').innerHTML=''
     }

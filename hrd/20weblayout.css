@@ -1,62 +1,62 @@
 header{
     background-color: cadetblue;
-    padding: 40px 20px;
     color: white;
+    padding: 40px 20px;
     margin-left: -10px;
+    margin-top: -20px;
 }
 h3{
     text-align: center;
 }
-nav{
-
-}
-body{
+nav{  }
+body {
     width: 100%;
 }
-ul{
+ul {
     /* border: 1px solid blue; */
     list-style: none;
     background-color: brown;
-   
     overflow: hidden;
-    margin : auto;
+    margin: auto;
     margin-left: -10px;
-
+    
 }
 ul > li {
     float: left;
-    /* color: white; */
     /* border: 1px solid black; */
 }
-/* 위의 border로 영역확인 : nav,ul 영역이 li영역보다 작습니다 */
+/* 위의 border로 영역확인 : nav,ul 영역이 li영역보다 작습니다. */
 ul > li a{
     display: block;
+    color: aliceblue;
+    padding: 20px 16px;
     text-align: center;
-    color: white;
-    padding: 14px 16px;
     text-decoration: none;
-    /*  */
 }
-ul > li a:hover{
+ul > li a:hover {
     background-color: black;
     color: white;
 }
-/* ul > li:last-child {
+/* ul 태그 1개일때만 이렇게 작성하세요. 마지막 li 태그 스타일 */
+ul > li:last-child {
     float: right;
     margin-right: 20px;
-} */
-
-
-
+}
 
 main{
     background-color: azure;
     padding: 20px;
-    height: 450px;
+   
     margin-left: -10px;
 }
+
+iframe {
+    overflow-x:hidden; overflow:auto; width:100%; min-height:300px;
+    padding: 20px;
+}
+
 footer{
-    background-color: cornflowerblue;
+    background-color: cornflowerblue ;
     color: white;
     padding: 20px;
     text-align: center;
